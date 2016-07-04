@@ -1,3 +1,3 @@
-from scripts import *
-
-print globals()['moviemanager'].main()
+# from scripts import *
+from moviemanager import main
+print globals()['main'].main()
