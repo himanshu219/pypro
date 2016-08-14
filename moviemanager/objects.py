@@ -13,20 +13,22 @@ from moviemanager.models import Movies, Writer, Director, Actor, Genre, DBSessio
 
 
 class GetMovieDataMixin(GetDataMixin, ModifyDataMixin):
-    '''prompt for movies to add,
-     automatic movie name normalize
-     and (edit distance)similar movies prompt,
+    '''  BLOCKERS
          move and rename movies and folders,
-         ask have u watched,
+         ask have u watched, generic list func,create settings for watch
          optimize previously added movies using .movid
-         create settings for watch
          add codec data dump and add owner with watched liked column
-     add serials and episodes support
+         add search google support/automatic movie name normalize/ and (edit distance)similar movies prompt,
+     PENDING
+     prompt for movies to add
+     add serials and episodes support with wikipedia episodes
      add csv upload and download support with angular js frontend and server
+     add analytics dashboard
      add update functionality with cron folder lookup
      poster download
      add data functionality in datamixin
      configure logging and add all summary in main
+     add torrent
      '''
     def __init__(self,data):
         self.data = copy.deepcopy(data)
