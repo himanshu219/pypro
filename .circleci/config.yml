@@ -5,7 +5,7 @@ orbs:
   sumologic: sumologic/sumologic@2.2.1
 
 parameters:
-  action:
+  team:
     type: string
     default: testteam
   workload:
